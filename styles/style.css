@@ -1,0 +1,156 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  color: var(--transparent-white);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+.text-normal {
+  font-size: 16px;
+  color: var(--transparent-white);
+  line-height: 30px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.container {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 360px;
+  margin-right: 360px;
+}
+
+.section-sedan {
+  max-width: 33.3%;
+  width: 33%;
+  padding: 70px;
+  background-color: var(--bright-orange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.section-sedan .btn {
+  color: var(--bright-orange);
+}
+
+.section-suvs {
+  max-width: 33.3%;
+  width: 33%;
+  padding: 70px;
+  background-color: var(--dark-cyan);
+}
+
+.section-suvs .btn {
+  color: var(--dark-cyan);
+}
+
+.section-luxury {
+  max-width: 33.3%;
+  width: 33%;
+  padding: 70px;
+  background-color: var(--very-dark-cyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section-luxury .btn {
+  color: var(--very-dark-cyan);
+}
+
+.btn {
+  display: block;
+  margin-top: 100px;
+  border-radius: 100px;
+  border: none;
+  padding: 15px 50px;
+  font-size: 1.15rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.btn:hover {
+  background-color: rgba(255, 222, 173, 0);
+  cursor: pointer;
+  color: white;
+  outline: solid white 1px;
+}
+
+.icon {
+  width: 80px;
+}
+
+@media (max-width: 915px) {
+  .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .section-sedan {
+    max-width: 33.3%;
+    width: 33%;
+    padding: 70px;
+    background-color: var(--bright-orange);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .section-luxury {
+    max-width: 33.3%;
+    width: 33%;
+    padding: 70px;
+    background-color: var(--very-dark-cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 00px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
